@@ -1,3 +1,3 @@
-// build time:Wed May 06 2020 14:11:03 GMT+0800 (GMT+08:00)
+// build time:Wed May 06 2020 14:15:32 GMT+0800 (GMT+08:00)
 var figlet=require("../../lib/node-figlet.js");figlet("Hello World!","Standard",function(o,l){if(o){console.log("Something went wrong...");console.dir(o);return}console.log(l);figlet.text("Again, Hello World!","Graffiti",function(o,l){if(o){console.log("Something went wrong...");console.dir(o);return}console.log(l);figlet.text("Last time...",{font:"Standard",horizontalLayout:"full",verticalLayout:"full"},function(o,l){if(o){console.log("Something went wrong...");console.dir(o);return}console.log(l)})})});
 //rebuild by neat 
