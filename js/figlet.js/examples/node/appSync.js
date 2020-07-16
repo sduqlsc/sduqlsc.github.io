@@ -1,3 +1,3 @@
-// build time:Tue Jul 14 2020 09:05:00 GMT+0800 (China Standard Time)
+// build time:Thu Jul 16 2020 17:02:32 GMT+0800 (China Standard Time)
 var figlet=require("../../lib/node-figlet.js");console.log(figlet.textSync("Hello World!","Standard"));console.log(figlet.textSync("Again, Hello World!","Graffiti"));console.log(figlet.textSync("Last time...",{font:"Standard",horizontalLayout:"full",verticalLayout:"full"}));
 //rebuild by neat 
