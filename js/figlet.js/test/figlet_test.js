@@ -1,3 +1,159 @@
-// build time:Thu Mar 11 2021 11:16:15 GMT+0800 (China Standard Time)
-"use strict";var figlet=require("../lib/node-figlet"),grunt=require("grunt"),fs=require("fs"),path=require("path"),async=require("async");exports.figlet={setUp:function(t){t()},standard:function(t){t.expect(1);figlet("FIGlet\nFONTS",{font:"Standard",verticalLayout:"fitted"},function(e,n){var a=grunt.file.read("test/expected/standard");t.equal(n,a,'Standard font with a vertical layout of "fitted".');t.done()})},standardSync:function(t){t.expect(1);var e=grunt.file.read("test/expected/standard");var n=figlet.textSync("FIGlet\nFONTS",{font:"Standard",verticalLayout:"fitted"});t.equal(n,e,'Standard font with a vertical layout of "fitted".');t.done()},standardParse:function(t){t.expect(1);var e=grunt.file.read("test/expected/standard");var n=fs.readFileSync(path.join(__dirname,"../fonts/Standard.flf"),"utf8");var a=figlet.parseFont("StandardParseFontName",n);var i=figlet.textSync("FIGlet\nFONTS",{font:"StandardParseFontName",verticalLayout:"fitted"});t.equal(i,e,'Standard font with a vertical layout of "fitted" loaded using parseFont().');t.done()},graffiti:function(t){t.expect(1);figlet.text("ABC.123",{font:"Graffiti",horizontalLayout:"fitted"},function(e,n){var a=grunt.file.read("test/expected/graffiti");t.equal(n,a,'Graffiti font with a horizontal layout of "fitted".');t.done()})},graffitiSync:function(t){t.expect(1);var e=grunt.file.read("test/expected/graffiti");var n=figlet.textSync("ABC.123",{font:"Graffiti",horizontalLayout:"fitted"});t.equal(n,e,'Graffiti font with a horizontal layout of "fitted".');t.done()},dancingFont:function(t){t.expect(1);figlet.text("pizzapie",{font:"Dancing Font",horizontalLayout:"full"},function(e,n){var a=grunt.file.read("test/expected/dancingFont");t.equal(n,a,'Dancing Font with a horizontal layout of "full".');t.done()})},dancingFontSync:function(t){t.expect(1);var e=grunt.file.read("test/expected/dancingFont");var n=figlet.textSync("pizzapie",{font:"Dancing Font",horizontalLayout:"full"});t.equal(n,e,'Dancing Font with a horizontal layout of "full".');t.done()},printDirection:function(t){t.expect(1);figlet.text("pizzapie",{font:"Dancing Font",horizontalLayout:"full",printDirection:1},function(e,n){var a=grunt.file.read("test/expected/dancingFontReverse");t.equal(n,a,"Dancing Font with a reversed print direction.");t.done()})},loadAll:function(t){var e=0;t.expect(1);figlet.fonts(function(n,a){if(n){e++;return}async.eachSeries(a,function(t,n){figlet.text("abc ABC ...",{font:t},function(t,a){if(t){e++}n()})},function(n){t.equal(e,0,"A problem occurred while testing one of the fonts.");t.done()})})}};
-//rebuild by neat 
+
+
+'use strict';
+
+var figlet = require('../lib/node-figlet'),
+    grunt = require('grunt'),
+    fs = require('fs'),
+    path = require('path'),
+    async = require('async');
+
+/*
+  ======== A Handy Little Nodeunit Reference ========
+  https://github.com/caolan/nodeunit
+
+  Test methods:
+    test.expect(numAssertions)
+    test.done()
+  Test assertions:
+    test.ok(value, [message])
+    test.equal(actual, expected, [message])
+    test.notEqual(actual, expected, [message])
+    test.deepEqual(actual, expected, [message])
+    test.notDeepEqual(actual, expected, [message])
+    test.strictEqual(actual, expected, [message])
+    test.notStrictEqual(actual, expected, [message])
+    test.throws(block, [error], [message])
+    test.doesNotThrow(block, [error], [message])
+    test.ifError(value)
+*/
+
+exports.figlet = {
+    setUp: function(done) {
+        // setup here if necessary
+        done();
+    },
+    standard: function(test) {
+        test.expect(1);
+
+        figlet('FIGlet\nFONTS', {
+            font: 'Standard',
+            verticalLayout: 'fitted'
+        }, function(err, actual) {
+            var expected = grunt.file.read('test/expected/standard');
+            test.equal(actual, expected, 'Standard font with a vertical layout of "fitted".');
+
+            test.done();
+        });
+    },
+    standardSync: function(test) {
+        test.expect(1);
+
+        var expected = grunt.file.read('test/expected/standard');
+        var actual = figlet.textSync('FIGlet\nFONTS', {font: 'Standard', verticalLayout: 'fitted'});
+
+        test.equal(actual, expected, 'Standard font with a vertical layout of "fitted".');
+
+        test.done();
+    },
+    standardParse: function(test) {
+        test.expect(1);
+
+        var expected = grunt.file.read('test/expected/standard');
+        var data = fs.readFileSync(path.join(__dirname, '../fonts/Standard.flf'), 'utf8');
+        var font = figlet.parseFont('StandardParseFontName', data);
+        var actual = figlet.textSync('FIGlet\nFONTS', {font: 'StandardParseFontName', verticalLayout: 'fitted'});
+
+        test.equal(actual, expected, 'Standard font with a vertical layout of "fitted" loaded using parseFont().');
+
+        test.done();
+    },
+    graffiti: function(test) {
+        test.expect(1);
+
+        figlet.text('ABC.123', {
+            font: 'Graffiti',
+            horizontalLayout: 'fitted'
+        }, function(err, actual) {
+            var expected = grunt.file.read('test/expected/graffiti');
+            test.equal(actual, expected, 'Graffiti font with a horizontal layout of "fitted".');
+
+            test.done();
+        });
+    },
+    graffitiSync: function(test) {
+        test.expect(1);
+
+        var expected = grunt.file.read('test/expected/graffiti');
+        var actual = figlet.textSync('ABC.123', {font: 'Graffiti', horizontalLayout: 'fitted'});
+        test.equal(actual, expected, 'Graffiti font with a horizontal layout of "fitted".');
+
+        test.done();
+    },
+    dancingFont: function(test) {
+        test.expect(1);
+
+        figlet.text('pizzapie', {
+            font: 'Dancing Font',
+            horizontalLayout: 'full'
+        }, function(err, actual) {
+
+            var expected = grunt.file.read('test/expected/dancingFont');
+            test.equal(actual, expected, 'Dancing Font with a horizontal layout of "full".');
+
+            test.done();
+        });
+    },
+    dancingFontSync: function(test) {
+        test.expect(1);
+
+        var expected = grunt.file.read('test/expected/dancingFont');
+        var actual = figlet.textSync('pizzapie', {font: 'Dancing Font', horizontalLayout: 'full'});
+        test.equal(actual, expected, 'Dancing Font with a horizontal layout of "full".');
+
+        test.done();
+    },
+    printDirection: function(test) {
+        test.expect(1);
+
+        figlet.text('pizzapie', {
+            font: 'Dancing Font',
+            horizontalLayout: 'full',
+            printDirection: 1
+        }, function(err, actual) {
+
+            var expected = grunt.file.read('test/expected/dancingFontReverse');
+            test.equal(actual, expected, 'Dancing Font with a reversed print direction.');
+
+            test.done();
+        });
+    },
+    /*
+        This test ensures that all fonts will load without error
+    */
+    loadAll: function(test) {
+        var errCount = 0;
+        test.expect(1);
+
+        figlet.fonts(function(err, fonts) {
+            if (err) {
+                errCount++;
+                return;
+            }
+
+            async.eachSeries(fonts, function(font, next) {
+                figlet.text('abc ABC ...', {
+                    font: font
+                }, function(err, data) {
+                    if (err) {
+                        errCount++;
+                    }
+                    next();
+                });
+            }, function(err) {
+                test.equal(errCount, 0, 'A problem occurred while testing one of the fonts.');
+                test.done();
+            });
+        });
+    }
+};

@@ -1,3 +1,42 @@
-// build time:Thu Mar 11 2021 11:16:15 GMT+0800 (China Standard Time)
-"use strict";module.exports=function(t){t.initConfig({jshint:{all:["Gruntfile.js","lib/*.js","<%= nodeunit.tests %>"],options:{jshintrc:".jshintrc"}},clean:{tests:["tmp"]},nodeunit:{tests:["test/*_test.js"]}});t.loadNpmTasks("grunt-contrib-jshint");t.loadNpmTasks("grunt-contrib-clean");t.loadNpmTasks("grunt-contrib-nodeunit");t.registerTask("test",["clean","nodeunit"]);t.registerTask("default",["jshint","test"])};
-//rebuild by neat 
+'use strict';
+
+module.exports = function(grunt) {
+
+    // Project configuration.
+    grunt.initConfig({
+        jshint: {
+            all: [
+                'Gruntfile.js',
+                'lib/*.js',
+                '<%= nodeunit.tests %>',
+            ],
+            options: {
+                jshintrc: '.jshintrc',
+            },
+        },
+
+        // Before generating any new files, remove any previously-created files.
+        clean: {
+            tests: ['tmp'],
+        },
+
+        // Unit tests.
+        nodeunit: {
+            tests: ['test/*_test.js'],
+        },
+        
+    });
+
+    // These plugins provide necessary tasks.
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-nodeunit');
+    
+    // Whenever the "test" task is run, first clean the "tmp" dir, then run this
+    // plugin's task(s), then test the result.
+    grunt.registerTask('test', ['clean', 'nodeunit']);
+
+    // By default, lint and run all tests.
+    grunt.registerTask('default', ['jshint', 'test']);
+
+};
