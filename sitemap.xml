@@ -788,6 +788,13 @@
   </url>
   
   <url>
+    <loc>https://blog.cfz521.space/tags/%E5%AE%9A%E6%8A%95/</loc>
+    <lastmod>2021-04-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.cfz521.space/tags/CDN/</loc>
     <lastmod>2021-04-05</lastmod>
     <changefreq>daily</changefreq>
@@ -802,7 +809,7 @@
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/%E5%AE%9A%E6%8A%95/</loc>
+    <loc>https://blog.cfz521.space/tags/note/</loc>
     <lastmod>2021-04-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -823,13 +830,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/note/</loc>
-    <lastmod>2021-04-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.cfz521.space/tags/Hexo/</loc>
     <lastmod>2021-04-05</lastmod>
     <changefreq>daily</changefreq>
@@ -838,27 +838,6 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/FIGlet/</loc>
-    <lastmod>2021-04-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2021-04-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/ESLint/</loc>
-    <lastmod>2021-04-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/Linux/</loc>
     <lastmod>2021-04-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -943,6 +922,27 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E6%94%AF%E4%BB%98%E5%AE%9D/</loc>
+    <lastmod>2021-04-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2021-04-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/ESLint/</loc>
+    <lastmod>2021-04-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/Linux/</loc>
     <lastmod>2021-04-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
