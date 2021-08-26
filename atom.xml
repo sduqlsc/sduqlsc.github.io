@@ -6,7 +6,7 @@
   <link href="https://blog.cfz521.space/atom.xml" rel="self"/>
   
   <link href="https://blog.cfz521.space/"/>
-  <updated>2021-08-26T00:59:29.512Z</updated>
+  <updated>2021-08-26T03:22:45.413Z</updated>
   <id>https://blog.cfz521.space/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>glibc 误删恢复</title>
+    <link href="https://blog.cfz521.space/posts/546a6363.html"/>
+    <id>https://blog.cfz521.space/posts/546a6363.html</id>
+    <published>2021-08-26T01:09:22.000Z</published>
+    <updated>2021-08-26T03:22:45.413Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><p>除了 <code>rm -rf /</code>，还有一个 <code>rpm -e glibc --nodeps</code> 也是一键吃牢饭的那种。</p><span id="more"></span><h3 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h3><p>隔壁组的小哥哥执行软件安装操作时，要升级 <code>glibc</code>，可是执行时，却先来了个一个删除操作 <code>rpm -e</code>。当然，结果可想而知，除了当前的 <code>SSH</code> 会话还能保持，其他的都不能连接，各种内置命令比如 <code>ls</code>、<code>cp</code> 等也失效了。嗯，允许干掉核心包的系统让人觉得不可思议，但是执行这个操作的人也是匪夷所思，无知者无畏。</p><h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><p>知道了原委，开始寻找解决方案：</p><h4 id="重装"><a href="#重装" class="headerlink" title="重装"></a>重装</h4><p>这肯定是最快，最好，也是最稳妥，但是后续的工作也是比较麻烦的，特别是上面跑着很多的业务或者数据量比较大一时间难以备份</p><h4 id="busybox"><a href="#busybox" class="headerlink" title="busybox"></a>busybox</h4><p>搜索到了一篇文章：<a href="https://zhuanlan.zhihu.com/p/20062978">如何拯救一台glibc被干掉的Linux服务器?</a>，说是用此工具还是可以的，后续可以装上 <code>dropbear</code> 进行 ssh 等操作，但是这里的前提是 <code>ssh</code> 会话没有断开。在文章以及评论中的方法都很受教。采用将 <code>busybox</code> 文件转为 16 进制字符串的形式，然后开始用脚本输出到文件进行恢复，不过还是因为 <code>chmod</code> 不能执行，导致命令没有 +x 的权限。最后的解决方案也是很有意思，覆盖系统原始的 <code>cp</code> 命令：<code>printf '...' > /bin/cp</code>，因为它是由 x 权限的，所以 <code>cp</code> 就是 <code>busybox</code> 了。之后的操作就很神奇了，具体可参考这篇文章以及评论。</p><blockquote><p>别忘了，argv[0]为cp时，busybox就是在做cp的事情！</p><p>arg[0]参数就是你在shell里运行这个程序时敲入的程序的名字。比如运行cp x x.bak，那么arg[0]是”cp”，比如运行rm -rf x，arg[0]就是”rm”。而busybox是一个神奇的东西…..通过传给他的arg[0]参数确定自己要干什么。arg[0]是cp就会干一切cp该干的事情，arg[0]是ln就会摇身一变变成ln，以此类推。你可以当他是百变怪…….如果你在shell里把busybox重命名成cp，busybox就开始做cp该做的事情，重命名成mv，就变成了mv。除了重命名，软连接/硬连接应该也可以。</p></blockquote><h4 id="救援模式"><a href="#救援模式" class="headerlink" title="救援模式"></a>救援模式</h4><p>因为是物理机器，也没有什么备份，但是系统也进不去了，所以本着死马当活马医的心态，重启后尝试进入系统自带的救援模式，但是残念，所以只好用系统镜像引导。这里用 <code>rufus</code> 进行制作，但是需要注意的一点就是完成后，U 盘的卷标（label）应该是 **<code>CentOS 7 x86_64</code>**，如果不是修改成一个任意的名字，比如 <code>centos7</code>。</p><p>上述工作完成后，设置从 U 盘启动，然后进入菜单，进行如下操作：</p><p><img src="https://z3.ax1x.com/2021/08/26/hmQuRJ.md.jpg" alt="rescue mode"></p><p>注意图片中绿色字体处，此处按 <code>TAB</code> 可以编辑启动菜单，指定启动位置和卷标，如果这里和上面制作的 U 盘卷标没有对应，那么回车进入的界面就不是 <code>shell</code> 界面，而是 <code>dracut</code>。如果进入 <code>dracut</code>，我们可以进行如下操作：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> dev && ls</span><br></pre></td></tr></tbody></table></figure><p>找到 sd 开头的，U 盘一般为 <code>sdb4</code>。</p><blockquote><p><code>sdb4</code> 指是我的电脑设备上的 U 盘，<code>sda</code> 指第一个挂载盘，<code>sdb</code> 指第二个挂载盘，<code>sdc</code> 指第三个挂载盘，依此类推。每台电脑上的 USB 挂载名称不一样，要视情况而定选择挂载盘。通常情况下，我们不知道 U 盘挂载名称，这时候，可以将文字改为<br><code>vmlinuz initrd=initrd.img linux dd quiet</code><br>回车后，屏幕会出现挂载盘选择的的界面，该界面会显示，挂载盘名称（DEVICE）、类型（TYPE）、标识（LABEL）等信息，通常情况下选择标识为 <code>CentOS</code> 的就 OK，也可以一个一个试。这时候记下挂载盘名称，重启电脑，启动进入 U 盘，出现系统安装选择界面，按 Tab 键，修改<br><code>vmlinuz initrd=initrd.img inst.stage2=hd:LABEL=CentOS\x207\x20x86_64 rd.live.check quiet</code><br>为<br><code>vmlinuz initrd=initrd.img inst.stage2=hd:/dev/挂载盘名称 quiet</code></p><p>最后按 Enter 就能进入 CentOS 安装界面了。</p></blockquote><p>重启，进入图中绿色字体所指示的界面时，按 <code>TAB</code> 编辑，会有类似的行：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">inst.stage2=hd:LABEL=CentOS\x207\x20x86_64 rd.live.check quiet</span><br></pre></td></tr></tbody></table></figure><p><code>\x20</code> 对应的字符为空格，所以这里有几种改法：</p><ul><li>修改 U 盘的卷标为 <code>CentOS 7 x86_64</code>，这里搜索到说系统原因可能超长</li><li>替换 <code>LABEL</code> 为 U 盘的卷标，如 <code>centos7</code>，前提是得设置了</li><li>前述我们在 <code>dracut</code> 中已经查找到设备的序号 <code>sdb4</code>，所以此处可以此处可以改为 <code>inst.stage2=hd:/dev/sdb4 quiet</code>，然后回车即可</li></ul><p>进入到 <code>shell</code>，就好办了，参考<a href="https://blog.51cto.com/devin223/2554374">链接</a>：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mkdir media</span><br><span class="line">mount /dev/sdb4 media</span><br><span class="line"><span class="built_in">cd</span> media/Package</span><br><span class="line">rpm -ivh glibc*.rpm --root /mnt/sysimage --nodeps --force</span><br><span class="line"></span><br><span class="line">reboot</span><br></pre></td></tr></tbody></table></figure></body></html>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;除了 &lt;code&gt;rm -rf /&lt;/code&gt;，还有一个 &lt;code&gt;rpm -e glibc --nodeps&lt;/code&gt; 也是一键吃牢饭的那种。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="教程" scheme="https://blog.cfz521.space/categories/tutorials/"/>
+    
+    
+    <category term="Linux" scheme="https://blog.cfz521.space/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>滚烫斩棘</title>
@@ -411,27 +432,6 @@
     
     
     <summary type="html">&lt;p&gt;秋风清，秋月明，落叶聚还散，寒鸦栖复惊。相思相见知何日？此时此夜难为情！入我相思门，知我相思苦，长相思兮长相忆，短相思兮无穷极，早知如此绊人心，何如当初莫相识。—— 唐·李白 《三五七言》&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="随笔" scheme="https://blog.cfz521.space/categories/essay/"/>
-    
-    
-    <category term="总结" scheme="https://blog.cfz521.space/tags/%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>二一添作五</title>
-    <link href="https://blog.cfz521.space/posts/d1cfa048.html"/>
-    <id>https://blog.cfz521.space/posts/d1cfa048.html</id>
-    <published>2021-05-03T01:27:51.000Z</published>
-    <updated>2021-05-03T02:47:49.439Z</updated>
-    
-    <content type="html"><![CDATA[<html><head></head><body><p>俯首元齐鲁，东瞻海似杯。斗然一峰上，不信万山开。日抱扶桑跃，天横碣石来。君看秦始后，仍有汉皇台。—— 明·李梦阳 《泰山》</p><span id="more"></span><h3 id="打卡"><a href="#打卡" class="headerlink" title="打卡"></a>打卡</h3><p>跑量 <code>36.97km</code>，临近月底，本月跑量也已经达标，所以四月最后一周只跑了三次，周六第三次因为是五月一日，所以两次并作一次，跑了 10km 多点。没想到跑的很不理想，起跑略快，加之中午时段，心率始终降不下来，压着 160 以下的心率慢慢跑，结果步频也就降低了，需要反思和总结。</p><p>小阳总晨跑本周基本没有进行，因为我这边晚上加班没顾上。引体向上八个中，偶尔感觉有些力不从心，俯卧撑继续中，马克操也在努力找节奏中，身体不协调是硬伤。</p><h3 id="理财"><a href="#理财" class="headerlink" title="理财"></a>理财</h3><p>本月结束，大盘感觉上上下下蛮有意思的同时又略感乏味，前期的抱团股瓦解之后又重新开始了抱团；一季度披露，创业板涨势不错。全球芯片缺货依旧，雪上加霜的是最近虚拟币挖矿业务需求强劲，直接推高了显卡等的价格，3C 最佳理财产品；听说又出了 SSD 挖矿，这硬盘价格也是水涨船高了。印度疫情依旧严重，日增 40 万估计是保守了，毕竟是人类命运共同体，还是以和为贵，虽然战争和冲突才是人类史的主题。</p><p>本周还有一个让打工人扎心的娱乐圈大瓜，前男友爆料，郑爽阴阳合同一部戏片酬为 1.6 亿，折算成日薪的话，高达 208 万元；啧啧啧，粉丝时代，明星才是稀缺品，而影视公司就是个打工的。</p><p>2021 年巴菲特股东大会于5 月 1 日召开，各种公众号已经整理了<a href="https://mp.weixin.qq.com/s/PXOahap08IMDFVa3_zCETA">精华版</a>，股神认为<strong>最好的方式是投资指数基金；通胀已显著上涨，工资却没跟上；</strong>不过还是最佩服巴菲特和芒格的体力和精力，这个年纪还保持着清醒的头脑，不容易。</p><p><kbd><a href="https://cn.investing.com/rates-bonds/china-10-year-bond-yield-historical-data">十年期国债收益率</a></kbd> 收盘 3.193。</p><p><kbd><a href="https://www.jisilu.cn/data/indicator/">A 股全市场温度计</a></kbd> 本周 PB 20.66，PE 25.83。</p><p><img src="https://z3.ax1x.com/2021/05/03/ge2vct.png" alt="本周指数一览"></p><p><kbd><a href="https://qieman.com/portfolios/ZH035746/weekly-reports/58c52b4604d6ebb01d5fa6e3d4a2eb3c">且慢组合</a></kbd> 本周五净值 1.9487，上涨 <font color="red">+0.08%</font>。</p><p><kbd>定投组合</kbd> 本周为止本金 96517.08，市值 123719.03，今年来收益率 <font color="red">+1.57%</font>。2021 年初累计收益为 1749.88，当前累计收益 1915.34。</p><p><kbd>网格</kbd> 本周为止本金 20937.04，总市值 23508.27，证券市值截至本周累计盈利 <font color="green">-618.73</font>。<code>券商 ETF</code> 买入一格，卖出一格。</p><h3 id="小长假"><a href="#小长假" class="headerlink" title="小长假"></a>小长假</h3><p>本周周六开启小长假之旅，周中进行了攻防演练，连续值班了三天，好在晚上直到十点。不过还是挺累的，凳子不舒服，活动空间受限，屋子里人又多，又热又闷的，不好受，唯一的放松就是吃饭和上卫生间了，活活身体。三天接收后，当天下午聚餐，然后晚上去同事家玩了玩，稍微嗨了下，周五请假调休了算是提前放假，当然也是在家睡了大半天。起来后，打扫了一下卫生。</p><p>五一在家待了一天，去采购点食材和烧烤材料，准备二号的时候去海边自助烧烤。到了二号，天气突然晴朗起来，海边的风吹着很舒服，然而太阳确实够厉害的，因为时候发现阳夫人的博子被晒伤了一块。至于我，全服武装，空顶帽、防晒霜搞起来。中午烧烤， 农家风味，味道挺好，孩子们吃的很欢乐，大人吃的也挺好。唯一的缺点，就是自助烧烤区没有遮挡，烈日下暴晒，汗水直流，真是太热了。当然，这都不是事儿，玩沙子才是主要目的。小阳总玩儿的不亦乐乎，挖沙，在沙子上翻滚；在海边放个风筝也是很轻松，顺便挖个螃蟹啥的。早上如果去得早的话，还可以赶海，不过这个时节，天气是不确定因素。</p><p>淘宝五一活动，正好买了几条压缩袜，准备试试效果。也买了一个水壶腰包，不过，拉紧后带子太长了，效果不太好，所以就退货了，换了一个带腰包的跑步短裤试试效果。最近跑步越来越不会跑了，😔。最近想加入个跑团，跟着大神们练练。</p></body></html>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;俯首元齐鲁，东瞻海似杯。斗然一峰上，不信万山开。日抱扶桑跃，天横碣石来。君看秦始后，仍有汉皇台。—— 明·李梦阳 《泰山》&lt;/p&gt;</summary>
     
     
     
