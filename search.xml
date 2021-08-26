@@ -8,13 +8,13 @@
 
 <h3 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h3><p>隔壁组的小哥哥执行软件安装操作时，要升级 <code>glibc</code>，可是执行时，却先来了个一个删除操作 <code>rpm -e</code>。当然，结果可想而知，除了当前的 <code>SSH</code> 会话还能保持，其他的都不能连接，各种内置命令比如 <code>ls</code>、<code>cp</code> 等也失效了。嗯，允许干掉核心包的系统让人觉得不可思议，但是执行这个操作的人也是匪夷所思，无知者无畏。</p>
 <h3 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h3><p>知道了原委，开始寻找解决方案：</p>
-<h4 id="重装"><a href="#重装" class="headerlink" title="重装"></a>重装</h4><p>这肯定是最快，最好，也是最稳妥，但是后续的工作也是比较麻烦的，特别是上面跑着很多的业务或者数据量比较大一时间难以备份</p>
+<h4 id="重装"><a href="#重装" class="headerlink" title="重装"></a>重装</h4><p>这肯定是最快，最好，也是最稳妥，但是后续的工作也是比较麻烦的，特别是上面跑着很多的业务或者数据量比较大一时间难以备份。</p>
 <h4 id="busybox"><a href="#busybox" class="headerlink" title="busybox"></a>busybox</h4><p>搜索到了一篇文章：<a href="https://zhuanlan.zhihu.com/p/20062978">如何拯救一台glibc被干掉的Linux服务器?</a>，说是用此工具还是可以的，后续可以装上 <code>dropbear</code> 进行 ssh 等操作，但是这里的前提是 <code>ssh</code> 会话没有断开。在文章以及评论中的方法都很受教。采用将 <code>busybox</code> 文件转为 16 进制字符串的形式，然后开始用脚本输出到文件进行恢复，不过还是因为 <code>chmod</code> 不能执行，导致命令没有 +x 的权限。最后的解决方案也是很有意思，覆盖系统原始的 <code>cp</code> 命令：<code>printf '...' > /bin/cp</code>，因为它是由 x 权限的，所以 <code>cp</code> 就是 <code>busybox</code> 了。之后的操作就很神奇了，具体可参考这篇文章以及评论。</p>
 <blockquote>
 <p>别忘了，argv[0]为cp时，busybox就是在做cp的事情！</p>
 <p>arg[0]参数就是你在shell里运行这个程序时敲入的程序的名字。比如运行cp x x.bak，那么arg[0]是”cp”，比如运行rm -rf x，arg[0]就是”rm”。而busybox是一个神奇的东西…..通过传给他的arg[0]参数确定自己要干什么。arg[0]是cp就会干一切cp该干的事情，arg[0]是ln就会摇身一变变成ln，以此类推。你可以当他是百变怪…….如果你在shell里把busybox重命名成cp，busybox就开始做cp该做的事情，重命名成mv，就变成了mv。除了重命名，软连接/硬连接应该也可以。</p>
 </blockquote>
-<h4 id="救援模式"><a href="#救援模式" class="headerlink" title="救援模式"></a>救援模式</h4><p>因为是物理机器，也没有什么备份，但是系统也进不去了，所以本着死马当活马医的心态，重启后尝试进入系统自带的救援模式，但是残念，所以只好用系统镜像引导。这里用 <code>rufus</code> 进行制作，但是需要注意的一点就是完成后，U 盘的卷标（label）应该是 **<code>CentOS 7 x86_64</code>**，如果不是修改成一个任意的名字，比如 <code>centos7</code>。</p>
+<h4 id="救援模式"><a href="#救援模式" class="headerlink" title="救援模式"></a>救援模式</h4><p>因为是物理机器，也没有什么备份，但是系统也进不去了，所以本着死马当活马医的心态，重启后尝试进入系统自带的救援模式，但是残念，所以只好用系统镜像引导。这里用 <code>rufus</code> 进行制作，但是需要注意的一点就是完成后，U 盘的卷标（label）应该是 <strong>CentOS 7 x86_64</strong>，如果不是修改成一个任意的名字，比如 <code>centos7</code>。</p>
 <p>上述工作完成后，设置从 U 盘启动，然后进入菜单，进行如下操作：</p>
 <p><img src="https://z3.ax1x.com/2021/08/26/hmQuRJ.md.jpg" alt="rescue mode"></p>
 <p>注意图片中绿色字体处，此处按 <code>TAB</code> 可以编辑启动菜单，指定启动位置和卷标，如果这里和上面制作的 U 盘卷标没有对应，那么回车进入的界面就不是 <code>shell</code> 界面，而是 <code>dracut</code>。如果进入 <code>dracut</code>，我们可以进行如下操作：</p>
