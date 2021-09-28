@@ -1082,20 +1082,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/%E6%9D%8E%E6%96%87%E4%BA%AE/</loc>
-    <lastmod>2021-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E6%B8%85%E6%98%8E/</loc>
-    <lastmod>2021-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.cfz521.space/tags/%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2021-09-28</lastmod>
     <changefreq>daily</changefreq>
@@ -1111,6 +1097,20 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/Linux/</loc>
+    <lastmod>2021-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E6%9D%8E%E6%96%87%E4%BA%AE/</loc>
+    <lastmod>2021-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E6%B8%85%E6%98%8E/</loc>
     <lastmod>2021-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1201,6 +1201,20 @@
   </url>
   
   <url>
+    <loc>https://blog.cfz521.space/tags/%E8%A3%85%E5%A4%87%E5%85%9A/</loc>
+    <lastmod>2021-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E8%B7%91%E8%B7%91%E4%B9%90/</loc>
+    <lastmod>2021-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.cfz521.space/tags/HTML5/</loc>
     <lastmod>2021-09-28</lastmod>
     <changefreq>daily</changefreq>
@@ -1223,20 +1237,6 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/go/</loc>
-    <lastmod>2021-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E8%A3%85%E5%A4%87%E5%85%9A/</loc>
-    <lastmod>2021-09-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E8%B7%91%E8%B7%91%E4%B9%90/</loc>
     <lastmod>2021-09-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
