@@ -6,7 +6,7 @@
   <link href="https://blog.cfz521.space/atom.xml" rel="self"/>
   
   <link href="https://blog.cfz521.space/"/>
-  <updated>2022-06-28T06:34:10.988Z</updated>
+  <updated>2022-06-29T00:44:11.479Z</updated>
   <id>https://blog.cfz521.space/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>0622发车</title>
+    <link href="https://blog.cfz521.space/posts/97aacfee.html"/>
+    <id>https://blog.cfz521.space/posts/97aacfee.html</id>
+    <published>2022-06-29T00:40:01.000Z</published>
+    <updated>2022-06-29T00:44:11.479Z</updated>
+    
+    <content type="html"><![CDATA[<html><head></head><body><p>本月定投发车，合计 910 元。</p><span id="more"></span><h3 id="月定投"><a href="#月定投" class="headerlink" title="月定投"></a>月定投</h3><table><thead><tr><th align="left">NAME</th><th align="right">Amount</th></tr></thead><tbody><tr><td align="left">大成中证红利</td><td align="right">50</td></tr><tr><td align="left">易方达中证 500</td><td align="right">50</td></tr><tr><td align="left">易方达恒生中国企业</td><td align="right">50</td></tr><tr><td align="left">申万菱信沪深300</td><td align="right">50</td></tr><tr><td align="left">国泰国证食品饮料</td><td align="right">50</td></tr><tr><td align="left">汇添富文体娱乐</td><td align="right">50</td></tr><tr><td align="left">富国消费升级</td><td align="right">50</td></tr><tr><td align="left">富国消费主题</td><td align="right">50</td></tr><tr><td align="left">华宝香港中小</td><td align="right">50</td></tr><tr><td align="left">工银瑞信金融地产</td><td align="right">50</td></tr><tr><td align="left">天弘恒生科技</td><td align="right">0</td></tr><tr><td align="left">易方达中证海外互联网 50</td><td align="right">50</td></tr><tr><td align="left">天弘中证保险证券</td><td align="right">50</td></tr><tr><td align="left">广发传媒</td><td align="right">50</td></tr><tr><td align="left">工银深证红利</td><td align="right">50</td></tr><tr><td align="left">易方达科创 50</td><td align="right">50</td></tr><tr><td align="left">大摩健康</td><td align="right">50</td></tr><tr><td align="left">中欧医疗健康</td><td align="right">10</td></tr><tr><td align="left">嘉实恒生中国企业</td><td align="right">0</td></tr><tr><td align="left">易方达上证 50</td><td align="right">50</td></tr><tr><td align="left">广发全指信息</td><td align="right">50</td></tr><tr><td align="left">易方达信息</td><td align="right">0</td></tr><tr><td align="left">交银海外中国互联</td><td align="right">50</td></tr></tbody></table></body></html>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;本月定投发车，合计 910 元。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="滴滴" scheme="https://blog.cfz521.space/categories/get-on-bus/"/>
+    
+    
+    <category term="定投" scheme="https://blog.cfz521.space/tags/%E5%AE%9A%E6%8A%95/"/>
+    
+  </entry>
   
   <entry>
     <title>飞影</title>
@@ -415,27 +436,6 @@
     
     
     <category term="总结" scheme="https://blog.cfz521.space/tags/%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://blog.cfz521.space/posts/4a17b156.html"/>
-    <id>https://blog.cfz521.space/posts/4a17b156.html</id>
-    <published>2022-03-10T02:35:36.802Z</published>
-    <updated>2020-03-29T02:57:11.673Z</updated>
-    
-    <content type="html"><![CDATA[<html><head></head><body><p>Welcome to my very first post.</p><span id="more"></span><h2 id="开篇"><a href="#开篇" class="headerlink" title="开篇"></a>开篇</h2><h3 id="初衷"><a href="#初衷" class="headerlink" title="初衷"></a>初衷</h3><p>年前就想着开一个博客，记得很久以前在百度有过，结果404到网盘了。本着写写片段，记记所想，吐槽一下生活的目的，这里算是一个树洞吧。然人贵有一勤而有多懒，所以一直拖到现在。万事开头难，好在终于开始了，这两天选了一个域名，阿里云上有很多，挑了一个顺眼的。因此，从这里开始吧，HELLO WORLD ~</p><h3 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h3><p>对于博客选型，个人因为喜欢 <code>markdown</code> 的风格，所以考虑用了 <code>Hexo</code> 。然而调试整改之路何其漫长，不过也算是对 <code>Hexo</code> 的配置和结构有点了解了。不过免费托管的东西速度上确实堪忧，这里要吐槽一下移动宽带，垃圾中的辣鸡，所以用得静态资源能用 <code>CDN</code> 的还是用吧，加载速度确实快。</p><p><code>GitHub</code> 需要在本地配置一下 <code>hosts</code> 文件，最近似各种抽风，推送慢很多，打开<a href="https://tool.chinaz.com/dns?type=1&host=github.com&ip=">站长工具</a> 查询 <code>TTL</code> 值最小的 <code>IP</code> 保存到 <code>hosts</code> 中去，这样会好很多；另外 <code>github.global.ssl.fastly.net</code> 也查一下保存。</p><p>需要的美化教程中， <a href="https://hexo.io/docs/one-command-deployment.html">liaofuzhan</a> 确实给了很多参考，一并记录给后面需要的人。</p><h3 id="要写点啥"><a href="#要写点啥" class="headerlink" title="要写点啥"></a>要写点啥</h3><p>初步打算下来，主要是以下方面：</p><ul><li>工作方面的一些感想和积累，以及需要的代码片段</li><li>运动打卡，<code>5</code> 天 <code>5</code> 公里，周目标值 <code>25km</code> ，月挑战值 <code>110km</code></li><li>好物推荐，用来记录自己未入手却比较感兴趣的东西，在用的东西</li><li>其他</li></ul><h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>感谢阳夫人和小阳总的支持，是你们给了我更多生活的快乐，笔芯！</p></body></html>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;Welcome to my very first post.&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="随笔" scheme="https://blog.cfz521.space/categories/essay/"/>
-    
-    
-    <category term="hello" scheme="https://blog.cfz521.space/tags/hello/"/>
     
   </entry>
   
