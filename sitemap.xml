@@ -1523,13 +1523,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/%E5%AE%9A%E6%8A%95/</loc>
-    <lastmod>2022-11-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.cfz521.space/tags/CDN/</loc>
     <lastmod>2022-11-23</lastmod>
     <changefreq>daily</changefreq>
@@ -1538,6 +1531,13 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/Cloudfare/</loc>
+    <lastmod>2022-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E5%AE%9A%E6%8A%95/</loc>
     <lastmod>2022-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1559,27 +1559,6 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/note/</loc>
-    <lastmod>2022-11-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2022-11-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/ESLint/</loc>
-    <lastmod>2022-11-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/Linux/</loc>
     <lastmod>2022-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1608,6 +1587,27 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E6%B8%85%E6%98%8E/</loc>
+    <lastmod>2022-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2022-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/ESLint/</loc>
+    <lastmod>2022-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/Linux/</loc>
     <lastmod>2022-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1698,6 +1698,20 @@
   </url>
   
   <url>
+    <loc>https://blog.cfz521.space/tags/%E8%A3%85%E5%A4%87%E5%85%9A/</loc>
+    <lastmod>2022-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E8%B7%91%E8%B7%91%E4%B9%90/</loc>
+    <lastmod>2022-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.cfz521.space/tags/HTML5/</loc>
     <lastmod>2022-11-23</lastmod>
     <changefreq>daily</changefreq>
@@ -1726,20 +1740,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/%E8%A3%85%E5%A4%87%E5%85%9A/</loc>
-    <lastmod>2022-11-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E8%B7%91%E8%B7%91%E4%B9%90/</loc>
-    <lastmod>2022-11-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.cfz521.space/tags/rm/</loc>
     <lastmod>2022-11-23</lastmod>
     <changefreq>daily</changefreq>
@@ -1748,27 +1748,6 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E5%A5%87%E6%80%AA%E7%9A%84%E7%9F%A5%E8%AF%86/</loc>
-    <lastmod>2022-11-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/book/</loc>
-    <lastmod>2022-11-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E7%AB%A5%E4%B9%A6/</loc>
-    <lastmod>2022-11-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E7%BB%98%E6%9C%AC/</loc>
     <lastmod>2022-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1790,6 +1769,27 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/PowerShell/</loc>
+    <lastmod>2022-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/book/</loc>
+    <lastmod>2022-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E7%AB%A5%E4%B9%A6/</loc>
+    <lastmod>2022-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E7%BB%98%E6%9C%AC/</loc>
     <lastmod>2022-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -1831,6 +1831,13 @@
   </url>
   
   <url>
+    <loc>https://blog.cfz521.space/tags/%E9%AB%98%E8%80%83/</loc>
+    <lastmod>2022-11-23</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.cfz521.space/tags/%E7%89%9B%E5%B8%82/</loc>
     <lastmod>2022-11-23</lastmod>
     <changefreq>daily</changefreq>
@@ -1846,13 +1853,6 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/event/</loc>
-    <lastmod>2022-11-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E9%AB%98%E8%80%83/</loc>
     <lastmod>2022-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2029,14 +2029,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/categories/life/</loc>
+    <loc>https://blog.cfz521.space/categories/digital-life/</loc>
     <lastmod>2022-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/categories/digital-life/</loc>
+    <loc>https://blog.cfz521.space/categories/life/</loc>
     <lastmod>2022-11-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
