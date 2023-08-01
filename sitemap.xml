@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.cfz521.space/posts/ee314732.html</loc>
+    
+    <lastmod>2023-08-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.cfz521.space/posts/b66e1d87.html</loc>
     
     <lastmod>2023-07-24</lastmod>
@@ -1754,7 +1761,7 @@
 
   <url>
     <loc>https://blog.cfz521.space/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -1762,476 +1769,476 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/CDN/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/Cloudfare/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E5%AE%9A%E6%8A%95/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E7%94%9F%E6%B4%BB%E5%A4%A7%E7%88%86%E7%82%B8/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/The-Big-Bang-Theory/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/note/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E5%AE%9A%E6%8A%95/</loc>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E7%94%9F%E6%B4%BB%E5%A4%A7%E7%88%86%E7%82%B8/</loc>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/The-Big-Bang-Theory/</loc>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/Hexo/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/FIGlet/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/ESLint/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/Linux/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E6%9D%8E%E6%96%87%E4%BA%AE/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E6%B8%85%E6%98%8E/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/%E6%98%BE%E7%A4%BA%E5%99%A8/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <loc>https://blog.cfz521.space/tags/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/4K/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <loc>https://blog.cfz521.space/tags/ESLint/</loc>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/Android/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/UVC/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/RTMP/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/USB-Camera/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <loc>https://blog.cfz521.space/tags/Linux/</loc>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/type-c/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E6%89%A9%E5%B1%95%E5%9D%9E/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/%E6%B4%BB%E4%B9%85%E8%A7%81/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <loc>https://blog.cfz521.space/tags/%E6%98%BE%E7%A4%BA%E5%99%A8/</loc>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/%E5%8E%9F%E6%B2%B9/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <loc>https://blog.cfz521.space/tags/4K/</loc>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/Android/</loc>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/UVC/</loc>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/RTMP/</loc>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/USB-Camera/</loc>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E5%9F%BA%E9%87%91%E8%BD%AC%E6%89%98%E7%AE%A1/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E6%94%AF%E4%BB%98%E5%AE%9D/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/HTML5/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <loc>https://blog.cfz521.space/tags/%E6%B4%BB%E4%B9%85%E8%A7%81/</loc>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/SSE/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/golang/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/go/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <loc>https://blog.cfz521.space/tags/%E5%8E%9F%E6%B2%B9/</loc>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E8%A3%85%E5%A4%87%E5%85%9A/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E8%B7%91%E8%B7%91%E4%B9%90/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/rm/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <loc>https://blog.cfz521.space/tags/HTML5/</loc>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/SSE/</loc>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/golang/</loc>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/go/</loc>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E5%A5%87%E6%80%AA%E7%9A%84%E7%9F%A5%E8%AF%86/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/book/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E7%AB%A5%E4%B9%A6/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E7%BB%98%E6%9C%AC/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <loc>https://blog.cfz521.space/tags/rm/</loc>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/Windows/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/Terminal/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/PowerShell/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/book/</loc>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E7%AB%A5%E4%B9%A6/</loc>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E7%BB%98%E6%9C%AC/</loc>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/live/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/618/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E5%B9%B4%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E6%AF%95%E4%B8%9A/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E5%B9%BC%E5%84%BF%E5%9B%AD/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E7%89%9B%E5%B8%82/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/yyy/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/event/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E9%AB%98%E8%80%83/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/yyy/</loc>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/event/</loc>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E4%B8%89%E6%B5%A6%E6%98%A5%E9%A9%AC/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E5%BA%8A%E5%9E%AB/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E7%BE%8E%E6%B4%A5%E6%B5%93/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E7%83%A4%E7%AE%B1/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E5%BC%80%E5%AD%A6%E5%95%A6/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E5%B9%B4%E6%8A%A5/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E5%9F%BA%E9%87%91/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E4%B8%AD%E6%8A%A5/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/1111/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E6%8D%A2%E7%89%99/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E4%BA%BA%E4%BA%BA/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E6%8D%A2%E7%89%99/</loc>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E6%8A%A4%E8%82%A4/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/361/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/spire/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E7%AC%94/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E8%A2%81%E9%9A%86%E5%B9%B3/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E5%90%B4%E5%AD%9F%E8%B6%85/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E6%A2%81%E6%99%B6/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/tags/hello/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -2240,49 +2247,49 @@
   
   <url>
     <loc>https://blog.cfz521.space/categories/essay/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/categories/get-on-bus/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/categories/essay/digital-life/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/categories/tutorials/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/categories/tutorials/digital-life/</loc>
-    <lastmod>2023-07-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/categories/life/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://blog.cfz521.space/categories/digital-life/</loc>
-    <lastmod>2023-07-24</lastmod>
+    <lastmod>2023-08-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/categories/life/</loc>
+    <lastmod>2023-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
