@@ -1978,13 +1978,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/note/</loc>
-    <lastmod>2024-02-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.cfz521.space/tags/%E5%AE%9A%E6%8A%95/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
@@ -2000,6 +1993,13 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/The-Big-Bang-Theory/</loc>
+    <lastmod>2024-02-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/note/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2055,20 +2055,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/type-c/</loc>
-    <lastmod>2024-02-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E6%89%A9%E5%B1%95%E5%9D%9E/</loc>
-    <lastmod>2024-02-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.cfz521.space/tags/%E6%98%BE%E7%A4%BA%E5%99%A8/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
@@ -2077,6 +2063,20 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/4K/</loc>
+    <lastmod>2024-02-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/type-c/</loc>
+    <lastmod>2024-02-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E6%89%A9%E5%B1%95%E5%9D%9E/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2111,20 +2111,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/%E5%9F%BA%E9%87%91%E8%BD%AC%E6%89%98%E7%AE%A1/</loc>
-    <lastmod>2024-02-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E6%94%AF%E4%BB%98%E5%AE%9D/</loc>
-    <lastmod>2024-02-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.cfz521.space/tags/%E6%B4%BB%E4%B9%85%E8%A7%81/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
@@ -2133,6 +2119,20 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E5%8E%9F%E6%B2%B9/</loc>
+    <lastmod>2024-02-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E5%9F%BA%E9%87%91%E8%BD%AC%E6%89%98%E7%AE%A1/</loc>
+    <lastmod>2024-02-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E6%94%AF%E4%BB%98%E5%AE%9D/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2181,13 +2181,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/%E5%A5%87%E6%80%AA%E7%9A%84%E7%9F%A5%E8%AF%86/</loc>
-    <lastmod>2024-02-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.cfz521.space/tags/rm/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
@@ -2195,21 +2188,7 @@
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/Windows/</loc>
-    <lastmod>2024-02-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/Terminal/</loc>
-    <lastmod>2024-02-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/PowerShell/</loc>
+    <loc>https://blog.cfz521.space/tags/%E5%A5%87%E6%80%AA%E7%9A%84%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2237,6 +2216,27 @@
   </url>
   
   <url>
+    <loc>https://blog.cfz521.space/tags/Windows/</loc>
+    <lastmod>2024-02-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/Terminal/</loc>
+    <lastmod>2024-02-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/PowerShell/</loc>
+    <lastmod>2024-02-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.cfz521.space/tags/live/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
@@ -2245,20 +2245,6 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/618/</loc>
-    <lastmod>2024-02-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E6%AF%95%E4%B8%9A/</loc>
-    <lastmod>2024-02-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.cfz521.space/tags/%E5%B9%BC%E5%84%BF%E5%9B%AD/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2279,6 +2265,20 @@
   </url>
   
   <url>
+    <loc>https://blog.cfz521.space/tags/%E6%AF%95%E4%B8%9A/</loc>
+    <lastmod>2024-02-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E5%B9%BC%E5%84%BF%E5%9B%AD/</loc>
+    <lastmod>2024-02-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.cfz521.space/tags/yyy/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
@@ -2293,13 +2293,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/%E9%AB%98%E8%80%83/</loc>
-    <lastmod>2024-02-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.cfz521.space/tags/%E4%B8%89%E6%B5%A6%E6%98%A5%E9%A9%AC/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
@@ -2308,6 +2301,13 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/%E5%BA%8A%E5%9E%AB/</loc>
+    <lastmod>2024-02-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E9%AB%98%E8%80%83/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2384,13 +2384,6 @@
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/tags/%E7%AC%94/</loc>
-    <lastmod>2024-02-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.cfz521.space/tags/361/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
@@ -2399,6 +2392,13 @@
   
   <url>
     <loc>https://blog.cfz521.space/tags/spire/</loc>
+    <lastmod>2024-02-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.cfz521.space/tags/%E7%AC%94/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -2470,14 +2470,14 @@
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/categories/digital-life/</loc>
+    <loc>https://blog.cfz521.space/categories/life/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.cfz521.space/categories/life/</loc>
+    <loc>https://blog.cfz521.space/categories/digital-life/</loc>
     <lastmod>2024-02-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
