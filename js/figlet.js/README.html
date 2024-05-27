@@ -2,7 +2,7 @@
 \_   _____/|   |/  _____/|  |   _____/  |_       |__| ______
  |    __)  |   /   \  ___|  | _/ __ \   __\      |  |/  ___/
  |     \   |   \    \_\  \  |_\  ___/|  |        |  |\___ \
- \___  /   |___|\______  /____/\___  >__| /\ /\__|  /____  >
+ \___  /   |___|\______  /____/\___  &gt;__| /\ /\__|  /____  &gt;
      \/                \/          \/     \/ \______|    \/
 </code></pre>
 <p><a href="https://travis-ci.org/patorjk/figlet.js"><img src="https://travis-ci.org/patorjk/figlet.js.svg" alt="Build Status"></a></p>
@@ -158,10 +158,10 @@ figlet.text('test', {
 </code></pre>
 <h2 id="Getting-Started-The-Browser"><a href="#Getting-Started-The-Browser" class="headerlink" title="Getting Started - The Browser"></a>Getting Started - The Browser</h2><p>The browser API is the same as the Node API with the exception of the “fonts” method not being available. The browser version also requires <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">fetch API</a> (or a <a href="https://github.com/github/fetch">shim</a>) for its loadFont function.</p>
 <p>Example usage:</p>
-<pre><code class="html"><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
-<script type="text/javascript" src="figlet.js"></script>
+<pre><code class="html">&lt;script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="figlet.js"&gt;&lt;/script&gt;
 
-<script>
+&lt;script&gt;
 
     figlet(inputText, 'Standard', function(err, text) {
         if (err) {
@@ -172,7 +172,7 @@ figlet.text('test', {
         console.log(text);
     });
 
-</script>
+&lt;/script&gt;
 </code></pre>
 <h3 id="textSync-1"><a href="#textSync-1" class="headerlink" title="textSync"></a>textSync</h3><p>The browser API supports a synchronous mode so long as fonts used are preloaded.</p>
 <p>Example:</p>
