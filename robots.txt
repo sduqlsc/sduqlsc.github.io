@@ -1,5 +1,5 @@
 # hexo robots.txt
-User-agent: * 
+User-agent: *
 Allow: /
 Allow: /archives/
 Disallow: /vendors/
@@ -9,5 +9,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://blog.cfz521.space/sitemap.xml
-Sitemap: https://blog.cfz521.space/baidusitemap.xml
+Sitemap: https://blog.cf1423.top/sitemap.xml
+Sitemap: https://blog.cf1423.top/baidusitemap.xml
